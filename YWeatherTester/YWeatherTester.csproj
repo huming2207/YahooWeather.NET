@@ -33,5 +33,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YahooWeather.NET\YahooWeather.NET.csproj">
+      <Project>{F3FBAA45-2AB4-4729-BF9A-9276BCFAF2F1}</Project>
+      <Name>YahooWeather.NET</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

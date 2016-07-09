@@ -44,6 +44,9 @@
     <Compile Include="YahooWeather\Condition.cs" />
     <Compile Include="YahooWeather\Forecast.cs" />
     <Compile Include="YahooWeather\Guid.cs" />
+    <Compile Include="YahooWeather\Query.cs" />
+    <Compile Include="YahooWeather\Result.cs" />
+    <Compile Include="YahooWeather\QueryConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
