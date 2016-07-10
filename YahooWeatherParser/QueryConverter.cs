@@ -30,11 +30,18 @@ namespace YahooWeatherParser
 			{
 				var queryInfo = queryWrapper["query"];
 				Query queryResult = queryInfo.ToObject<Query>();
-				return queryResult;
+				if (queryResult.Count == 0 || queryResult.Results == null)
+				{
+					throw new YahooWeatherException("Query failed with null content.\r\nSometimes it can be also caused by server faults. \r\nPlease try again later.");
+				}
+				else
+				{
+					return queryResult;
+				}
 			}
 			else
 			{
-				throw new ArgumentNullException();
+				throw new YahooWeatherException("Query failed with null content.\r\nSometimes it can be also caused by server faults. \r\nPlease try again later.");
 			}
 		}
 
