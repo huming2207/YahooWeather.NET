@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace YahooWeather.NET
+namespace YahooWeatherParser
 {
 	[JsonObject()]
 	public class Item
@@ -24,14 +25,14 @@ namespace YahooWeather.NET
 		[JsonProperty(PropertyName = "condition")]
 		public Condition Condition { get; set; }
 
-		[JsonProperty(PropertyName = "forecast")]
-		public Forecast Forecast { get; set; }
+	//	[JsonProperty(PropertyName = "forecast")]
+	//	public List<Forecast> Forecast { get; set; }
 
 		[JsonProperty(PropertyName = "description")]
 		public string Description { get; set; }
 
 		[JsonProperty(PropertyName = "guid")]
-		public string Guid { get; set; }
+		public Guid Guid { get; set; }
 	}
 }
 

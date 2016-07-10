@@ -1,5 +1,5 @@
 ﻿using System;
-namespace YahooWeather.NET
+namespace YahooWeatherParser
 {
 	public class MyClass
 	{

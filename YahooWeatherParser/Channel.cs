@@ -1,6 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
-namespace YahooWeather.NET
+namespace YahooWeatherParser
 {
 	[JsonObject()]
 	public class Channel

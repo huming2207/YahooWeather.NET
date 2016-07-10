@@ -22,15 +22,15 @@ using System.Net;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
-namespace YahooWeather.NET
+namespace YahooWeatherParser
 {
 	public class YahooWeatherControl
 	{
-		public const string ApiBaseUrl = "https://query.yahooapis.com";
-		public const string YqlBaseStr = "/v1/public/yql?q=";
-		public const string YqlQuery = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text=\"{0}, {1}\")";
-		public const string YqlCelsiusTemp = " and u=\'c\'";
-		public const string MiscStr = "&format=json&diagnostics=false&env=store://datatables.org/alltableswithkeys&callback=";
+		private const string ApiBaseUrl = "https://query.yahooapis.com";
+		private const string YqlBaseStr = "/v1/public/yql?q=";
+		private const string YqlQuery = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text=\"{0}, {1}\")";
+		private const string YqlCelsiusTemp = " and u=\'c\'";
+		private const string MiscStr = "&format=json&diagnostics=false&env=store://datatables.org/alltableswithkeys&callback=";
 
 		public YahooWeatherControl(bool useCelsius = true)
 		{
@@ -42,7 +42,8 @@ namespace YahooWeather.NET
 		private HttpClient GetHttpClient()
 		{
 			var client = new HttpClient();
-			client.BaseAddress = new Uri(ApiBaseUrl);
+			client.BaseAddress = new Uri(YahooWeatherControl.ApiBaseUrl);
+			Debug.WriteLine("REQUEST HTTP ADDR: " + ApiBaseUrl);
 			return client;
 		}
 
@@ -51,11 +52,11 @@ namespace YahooWeather.NET
 			string CallUrl = string.Empty;
 			if (UseCelsiusUnit)
 			{
-				CallUrl = YqlBaseStr + yqlQuery + YqlCelsiusTemp + MiscStr;
+				CallUrl = ApiBaseUrl + YqlBaseStr + Uri.EscapeDataString(yqlQuery) + MiscStr;
 			}
 			else 
 			{
-				CallUrl = YqlBaseStr + yqlQuery + MiscStr;
+				CallUrl = ApiBaseUrl + YqlBaseStr + Uri.EscapeDataString(yqlQuery) + MiscStr;
 			}
 
 			Debug.WriteLine("REQUEST HTTP ADDR: " + CallUrl);
@@ -77,4 +78,6 @@ namespace YahooWeather.NET
 
 	}
 }
+
+
 

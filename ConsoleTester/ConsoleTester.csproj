@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{52F7A26F-F937-4EDE-876C-2C3F1A40C1D7}</ProjectGuid>
+    <ProjectGuid>{C5EDA7DB-9198-4887-BD55-67728B380ADA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>YWeatherTester</RootNamespace>
-    <AssemblyName>YWeatherTester</AssemblyName>
+    <RootNamespace>ConsoleTester</RootNamespace>
+    <AssemblyName>ConsoleTester</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -34,9 +34,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YahooWeather.NET\YahooWeather.NET.csproj">
-      <Project>{F3FBAA45-2AB4-4729-BF9A-9276BCFAF2F1}</Project>
-      <Name>YahooWeather.NET</Name>
+    <ProjectReference Include="..\YahooWeatherParser\YahooWeatherParser.csproj">
+      <Project>{01AB7075-CB81-4AD2-90F2-DC444DE09363}</Project>
+      <Name>YahooWeatherParser</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
