@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 
 namespace YahooWeatherParser
 {
-	public class ForcastConverter : JsonConverter
+	public class ForecastConverter : JsonConverter
 	{
 		public override bool CanConvert(Type objectType)
 		{

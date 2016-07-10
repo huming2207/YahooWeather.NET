@@ -25,8 +25,8 @@ namespace YahooWeatherParser
 		[JsonProperty(PropertyName = "condition")]
 		public Condition Condition { get; set; }
 
-	//	[JsonProperty(PropertyName = "forecast")]
-	//	public List<Forecast> Forecast { get; set; }
+		[JsonProperty(PropertyName = "forecast")]
+		public List<Forecast> Forecast { get; set; }
 
 		[JsonProperty(PropertyName = "description")]
 		public string Description { get; set; }
