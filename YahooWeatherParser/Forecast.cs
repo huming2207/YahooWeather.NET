@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace YahooWeatherParser
 {
-	[JsonArray]
+	[JsonObject]
 	public class Forecast
 	{
 		[JsonProperty(PropertyName = "code")]

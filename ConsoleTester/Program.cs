@@ -11,6 +11,7 @@ namespace ConsoleTester
 			var yw = new YahooWeatherControl();
 			var result = yw.DoQuery("Melbourne", "Victoria");
 			Console.WriteLine(result.Result.Count);
+			Console.WriteLine(result.Result.Results.Channel.Item.Forecast[0].High);
 		}
 	}
 }
