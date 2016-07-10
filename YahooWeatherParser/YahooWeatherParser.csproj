@@ -47,7 +47,7 @@
     <Compile Include="Units.cs" />
     <Compile Include="Wind.cs" />
     <Compile Include="YahooWeatherControl.cs" />
-    <Compile Include="ForecastConverter.cs" />
+    <Compile Include="ConditionCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

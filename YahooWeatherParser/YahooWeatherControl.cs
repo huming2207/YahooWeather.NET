@@ -1,6 +1,12 @@
 ﻿/*
  *  Yahoo Weather .NET Parsing Library
  *  Written By Jackson Ming Hu @ RMIT University, 2016
+ * 
+ *  This is a part of the Project Apodidae.
+ * 
+ * "I wrote these code and projects for my prettiest friend.
+ *  But while trying not to prove that I care. 
+ *  I was trying not to make all my moves in one motion and scare her away"
  */
 
 using System;

@@ -7,7 +7,7 @@ namespace YahooWeatherParser
 	public class Condition
 	{
 		[JsonProperty(PropertyName = "code")]
-		public int Code { get; set; }
+		public ConditionCode Code { get; set; }
 
 		[JsonProperty(PropertyName = "date")]
 		public string Date { get; set; }
