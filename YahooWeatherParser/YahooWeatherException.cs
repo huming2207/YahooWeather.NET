@@ -2,19 +2,19 @@
 
 namespace YahooWeatherParser
 {
-	public class YahooWeatherException : Exception
+	public class YahooWeatherGeneralException : Exception
 	{
-		public YahooWeatherException()
+		public YahooWeatherGeneralException()
 		{
 			// Leave it empty
 		}
 
-		public YahooWeatherException(string message, Exception inner) : base(message, inner)
+		public YahooWeatherGeneralException(string message, Exception inner) : base(message, inner)
 		{
 			// Leave it empty
 		}
 
-		public YahooWeatherException(string message) : base(message)
+		public YahooWeatherGeneralException(string message) : base(message)
 		{
 			// Leave it empty
 		}
