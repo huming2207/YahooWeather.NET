@@ -19,7 +19,7 @@ Currently supports:
  - Microsoft native .NET toolchains (Haven't tested yet, but suppose to work fine.)
 
 
-How to use
+How to use this library?
 ----------
 
 For example, if you want to get the current temperature in Melbourne, Victoria, Australia, then:
@@ -34,6 +34,13 @@ It's simple. You just set your **city/district** and **your province/region/stat
 
 BTW, you may need to have a look at [Yahoo Weather Developer Documentation](https://developer.yahoo.com/weather/).
 
+FAQ
+---
+1.
+
+ **What the hell? I've got a YahooWeatherNullContentException?**
+
+Check your arguments in DoQuery function. Is it correct? If it is, then try again later. So far I don't know why. I'm still working on it. Also you can see here for more information: [Simple Yahoo Weather Api Not Working](http://stackoverflow.com/questions/36242098/simple-yahoo-weather-api-not-working)
 
 Author
 ------
