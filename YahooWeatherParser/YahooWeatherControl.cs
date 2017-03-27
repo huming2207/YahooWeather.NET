@@ -2,11 +2,6 @@
  *  Yahoo Weather .NET Parsing Library
  *  Written By Jackson Ming Hu @ RMIT University, 2016
  * 
- *  This is a part of the Project Apodidae.
- * 
- * "I wrote these code and projects for my prettiest friend.
- *  But while trying not to prove that I care. 
- *  I was trying not to make all my moves in one motion and scare her away"
  */
 
 using System;
@@ -17,8 +12,6 @@ using System.Net.Http;
 using System.Text;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using System.Net;
-using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
 namespace YahooWeatherParser
@@ -40,9 +33,11 @@ namespace YahooWeatherParser
 
 		private HttpClient GetHttpClient()
 		{
-			var client = new HttpClient();
-			client.BaseAddress = new Uri(YahooWeatherControl.ApiBaseUrl);
-			Debug.WriteLine("REQUEST HTTP ADDR: " + ApiBaseUrl);
+            var client = new HttpClient()
+            {
+                BaseAddress = new Uri(YahooWeatherControl.ApiBaseUrl)
+            };
+            Debug.WriteLine("REQUEST HTTP ADDR: " + ApiBaseUrl);
 			return client;
 		}
 
