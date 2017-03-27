@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>46719882-6220-4880-9822-6ab1b46d8124</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>YahooWeatherParser.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Astronomy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atmosphere.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Channel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Condition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ConditionCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Forecast.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Guid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Image.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Query.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Result.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Units.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wind.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)YahooWeatherException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)YahooWeatherNullContentException.cs" />
+  </ItemGroup>
+</Project>

@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace YahooWeatherParser
+namespace YahooWeatherParser.Shared
 {
 	[JsonObject()]
 	public class Units

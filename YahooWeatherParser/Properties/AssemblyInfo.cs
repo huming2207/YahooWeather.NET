@@ -5,9 +5,9 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle("YahooWeatherParser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription(".NET Parser for Weather forecast source from Yahoo")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("RMIT University (Australia)")]
+[assembly: AssemblyCompany("Ming Hu")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace YahooWeatherParser
+namespace YahooWeatherParser.Shared
 {
 	[JsonObject()]
 	public class Item

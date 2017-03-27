@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YahooWeatherParser
+namespace YahooWeatherParser.Shared
 {
 	public enum ConditionCode : uint
 	{

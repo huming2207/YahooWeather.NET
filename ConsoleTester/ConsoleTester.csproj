@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -34,9 +34,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YahooWeatherParser\YahooWeatherParser.csproj">
+    <ProjectReference Include="..\YahooWeatherParser\YahooWeatherParser.Pcl.csproj">
       <Project>{01AB7075-CB81-4AD2-90F2-DC444DE09363}</Project>
-      <Name>YahooWeatherParser</Name>
+      <Name>YahooWeatherParser.Pcl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

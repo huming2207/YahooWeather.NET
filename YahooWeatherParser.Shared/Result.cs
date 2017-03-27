@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace YahooWeatherParser
+namespace YahooWeatherParser.Shared
 {
 	[JsonObject()]
 	public class Results

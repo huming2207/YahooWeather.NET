@@ -1,7 +1,6 @@
 ﻿/*
  *  Yahoo Weather .NET Parsing Library
- *  Written By Jackson Ming Hu @ RMIT University, 2016
- * 
+ *  Written By Jackson Ming Hu, 2016
  */
 
 using System;
@@ -12,9 +11,10 @@ using System.Net.Http;
 using System.Text;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using YahooWeatherParser.Shared;
 using Newtonsoft.Json;
 
-namespace YahooWeatherParser
+namespace YahooWeatherParser.Pcl
 {
 	public class YahooWeatherControl
 	{
@@ -33,11 +33,9 @@ namespace YahooWeatherParser
 
 		private HttpClient GetHttpClient()
 		{
-            var client = new HttpClient()
-            {
-                BaseAddress = new Uri(YahooWeatherControl.ApiBaseUrl)
-            };
-            Debug.WriteLine("REQUEST HTTP ADDR: " + ApiBaseUrl);
+			var client = new HttpClient();
+			client.BaseAddress = new Uri(YahooWeatherControl.ApiBaseUrl);
+			Debug.WriteLine("REQUEST HTTP ADDR: " + ApiBaseUrl);
 			return client;
 		}
 

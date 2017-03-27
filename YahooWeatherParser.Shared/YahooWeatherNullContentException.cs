@@ -1,5 +1,5 @@
 ﻿using System;
-namespace YahooWeatherParser
+namespace YahooWeatherParser.Shared
 {
 	public class YahooWeatherNullContentException : Exception
 	{
