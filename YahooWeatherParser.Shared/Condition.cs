@@ -13,7 +13,7 @@ namespace YahooWeatherParser.Shared
 		public string Date { get; set; }
 
 		[JsonProperty(PropertyName = "temp")]
-		public string Temperature { get; set; }
+		public int Temperature { get; set; }
 
 		[JsonProperty(PropertyName = "text")]
 		public string StatusText { get; set; }
