@@ -22,7 +22,7 @@ namespace YahooWeatherParser.Shared
 		public int Low { get; set; }
 
 		[JsonProperty(PropertyName = "text")]
-		public string Text { get; set; }
+		public string StatusText { get; set; }
 
 	}
 }
